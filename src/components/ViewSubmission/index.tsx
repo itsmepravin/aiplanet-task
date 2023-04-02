@@ -157,14 +157,14 @@ const ViewSubmission: FC<IViewSubmissionProps> = ({ data, setData }) => {
               {submissionStartDate?.year} - {submissionEndDate?.day}{" "}
               {submissionEndDate?.month} {submissionEndDate?.year}
             </div>
-            <div className={styles.linkButton}>
+            <a className={styles.linkButton} href={currSubmission?.githubLink}>
               <img src={githubIcon} alt="" />
               Github Repository
-            </div>
-            <div className={styles.linkButton}>
+            </a>
+            <a className={styles.linkButton} href={currSubmission?.googleLink}>
               <img src={openInNewIcon} alt="" />
               Other Link
-            </div>
+            </a>
           </div>
         </div>
       </div>
