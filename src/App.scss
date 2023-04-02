@@ -1,0 +1,17 @@
+:root {
+  --background-color: #f5f5f5;
+  --white: #ffffff;
+  --red: #df2c1d;
+  --celestial-blue: #003145;
+  --celestial-green: #44924c;
+  --celestial-green-2: #e3f2e5;
+  --celestial-grey: #333333;
+  --celestial-grey-2: #666666;
+  --celestial-grey-3: #222222;
+  --celestial-grey-4: #858585;
+  --celestial-grey-5: #cccccc;
+}
+
+.App {
+  background-color: var(--background-color);
+}

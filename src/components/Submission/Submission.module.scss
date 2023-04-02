@@ -1,0 +1,41 @@
+.mainContainer {
+  padding: 1.5rem;
+  background-color: var(--white);
+  box-shadow: 0px 3px 24px rgba(132, 132, 132, 0.16),
+    inset 0px -3px 6px rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  cursor: pointer;
+  width: 18.9rem;
+
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    > img {
+      object-fit: cover;
+      width: 6.25rem;
+      height: 6.25rem;
+      border-radius: 8px;
+    }
+
+    > span {
+      font-size: 1.25rem;
+      color: var(--celestial-grey-3);
+      font-weight: 600;
+    }
+  }
+
+  .descriptionContainer {
+    font-weight: 400;
+  }
+
+  .dateContainer {
+    color: var(--celestial-grey-2);
+    font-style: italic;
+    text-align: end;
+  }
+}

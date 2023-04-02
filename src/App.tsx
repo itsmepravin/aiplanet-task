@@ -1,26 +1,75 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import ViewSubmission from "./components/ViewSubmission";
+import NewSubmission from "./components/NewSubmission";
+import EditSubmission from "./components/EditSubmission";
+import Submission from "./components/Submission";
+import Submissions from "./components/Submissions";
+import { submissionsData } from "./data/submissions";
+import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Types } from "./components/Submission/types";
 
-function App() {
+const App = () => {
+  const [data, setData] = useState<Types.Submission[]>(
+    JSON.parse(localStorage.getItem("submissions") as string)
+  );
+
+  // useEffect(() => {
+  //   localStorage.setItem("submissions", JSON.stringify(submissionsData));
+  //   setData(JSON.parse(localStorage.getItem("submissions") as string));
+  // }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            element={
+              <>
+                <Navbar />
+                <Outlet />
+              </>
+            }
+          >
+            <Route
+              path="/"
+              element={
+                <>
+                  <Hero />
+                  <Submissions data={data} setData={setData} />
+                  <div
+                    style={{
+                      marginTop: "3.75rem",
+                      paddingLeft: "9.375rem",
+                      paddingRight: "9.375rem",
+                      paddingBottom: "9.375rem",
+                      display: "flex",
+                      gap: "2rem",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    {data?.map((submission) => (
+                      <Submission key={submission.id} submission={submission} />
+                    ))}
+                  </div>
+                </>
+              }
+            />
+            <Route
+              path="/view/:id"
+              element={<ViewSubmission data={data} setData={setData} />}
+            />
+            <Route path="/add" element={<NewSubmission setData={setData} />} />
+            <Route
+              path="/edit/:id"
+              element={<EditSubmission data={data} setData={setData} />}
+            />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;

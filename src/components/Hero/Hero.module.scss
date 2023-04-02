@@ -1,0 +1,33 @@
+.mainContainer {
+  height: 26rem;
+  background-color: var(--celestial-blue);
+  padding-left: 9.375rem;
+  padding-right: 9.375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .leftContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2.125rem;
+    flex: 0.67;
+    p {
+      color: var(--white);
+      &:nth-child(1) {
+        font-weight: 600;
+        font-size: 2.625rem;
+        margin: 0;
+      }
+
+      &:nth-child(2) {
+        font-size: 1.063rem;
+      }
+    }
+  }
+
+  .heroImage {
+    width: 12.493rem;
+    height: 18.75rem;
+  }
+}

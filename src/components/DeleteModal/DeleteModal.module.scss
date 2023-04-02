@@ -1,0 +1,62 @@
+.mainContainer {
+  width: 28.125rem;
+  height: 10.25rem;
+  background-color: var(--white);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  > span {
+    &:nth-child(1) {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    &:nth-child(2) {
+      font-size: 1rem;
+      color: var(--celestial-grey-2);
+    }
+  }
+
+  .btnContainer {
+    align-self: flex-end;
+    display: flex;
+    gap: 1rem;
+
+    > button {
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-size: 1rem;
+
+      &:nth-child(1) {
+        border: 1px solid var(--celestial-grey);
+        background: var(--white);
+        color: var(--celestial-grey);
+      }
+
+      &:nth-child(2) {
+        border: 1px solid var(--red);
+        background: var(--red);
+        color: var(--white);
+      }
+    }
+  }
+}
+
+.main {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 120%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
