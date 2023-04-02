@@ -16,10 +16,10 @@ const App = () => {
     JSON.parse(localStorage.getItem("submissions") as string)
   );
 
-  // useEffect(() => {
-  //   localStorage.setItem("submissions", JSON.stringify(submissionsData));
-  //   setData(JSON.parse(localStorage.getItem("submissions") as string));
-  // }, []);
+  useEffect(() => {
+    localStorage.setItem("submissions", JSON.stringify(submissionsData));
+    setData(JSON.parse(localStorage.getItem("submissions") as string));
+  }, []);
   return (
     <div className="App">
       <BrowserRouter>
