@@ -8,15 +8,15 @@ This is a project I created for the application of role "Front-end Developer Int
 
 - Made using React, SASS and Typescript.
 - Learners are able to create, edit, and delete their submission. Every submission form has following fields:
-  -- Title
-  -- Summary
-  -- Description
-  -- Cover Image
-  -- Hackthon name
-  -- Hackthon start date
-  -- Hackthon end date
-  -- Github repository link
-  -- Other links(optional)
+  - Title
+  - Summary
+  - Description
+  - Cover Image
+  - Hackthon name
+  - Hackthon start date
+  - Hackthon end date
+  - Github repository link
+  - Other links(optional)
 - Learners are able to see the list of submission where learner can search the submission using title.
 - There are two tabs as outlined i.e. All Submissions and Favourite Submissions.
 - When clicked on submission it takes them to page where learner can see all the data related to submission.
