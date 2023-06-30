@@ -42,10 +42,10 @@ const App = () => {
                     style={{
                       marginTop: "3.75rem",
                       paddingLeft: "9.375rem",
-                      paddingRight: "9.375rem",
+                      paddingRight: "8.375rem",
                       paddingBottom: "9.375rem",
                       display: "flex",
-                      gap: "2rem",
+                      gap: "1.9rem",
                       flexWrap: "wrap",
                     }}
                   >

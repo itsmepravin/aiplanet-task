@@ -1,46 +1,32 @@
-# Getting Started with Create React App
+# @[Live](https://aiplanet-task-pravin.netlify.app/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About this project
 
-## Available Scripts
+This is a project I created for the application of role "Front-end Developer Internship" for the company [AI Planet (formerly DPhi)](https://www.linkedin.com/company/aiplanet/) based on Leuven, Belgium. The provided days were 1 (April 1 2023 - April 2 2023). The provided task details can be found [here](https://docs.google.com/document/d/1atbkfI08ILYZW_qz0KBjGznQXhg1BouC4YPeJLdHk-Q/edit?pli=1). The figma file that was provided for this task can be found [here](https://www.figma.com/file/g54nwEVAl7gk74U4uEjYmD/AI-Planet-Intern-Hiring-Assignment?type=design&node-id=0-1&mode=design).
 
-In the project directory, you can run:
+## Project Details
 
-### `yarn start`
+- Made using React, SASS and Typescript.
+- Learners are able to create, edit, and delete their submission. Every submission form has following fields:
+  -- Title
+  -- Summary
+  -- Description
+  -- Cover Image
+  -- Hackthon name
+  -- Hackthon start date
+  -- Hackthon end date
+  -- Github repository link
+  -- Other links(optional)
+- Learners are able to see the list of submission where learner can search the submission using title.
+- There are two tabs as outlined i.e. All Submissions and Favourite Submissions.
+- When clicked on submission it takes them to page where learner can see all the data related to submission.
+- On this page, learners are able to edit, delete the submission & by clicking on the star icon they can make that submission as their favorite, which is reflected in the main page immediately.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Project Shortcomings
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- The search functionality works only once and is not fully dynamic.
+- The sorting functionality could not be implemented due to time issues.
 
-### `yarn test`
+## About Me
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+If you would like to get in touch, my contact details can be found inside [my portfolio website](https://pravin-singh.netlify.app/).
